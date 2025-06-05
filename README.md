@@ -55,8 +55,6 @@ python main.py flush
 
 You can watch a demo of the tool in action below:
 
-[▶️ Watch demo video](video/demo.mp4)
-
 [![Guacamole CLI Demo](https://img.youtube.com/vi/YOUR_YOUTUBE_VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=9WvmpQy5L2I)
 
 ## Contributing
