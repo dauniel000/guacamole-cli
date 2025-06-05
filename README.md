@@ -55,9 +55,7 @@ python main.py flush
 
 You can watch a demo of the tool in action below:
 
-<video src="video/demo.mp4" controls width="640">
-    Your browser does not support the video tag.
-</video>
+[▶️ Watch demo video](video/demo.mp4)
 
 ## Contributing
 - Create a fork
