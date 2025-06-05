@@ -60,7 +60,6 @@ def render_wallpaper(todos):
         draw.text((text_x, text_y), f"{i}. {todo}", fill=settings.TEXT_COLOR, font=font)
         text_y += settings.FONT_SIZE + 12
 
-    import uuid
     new_wallpaper = f"wallpaper_{uuid.uuid4().hex}.png"
     img = img.convert('RGB')
     img.save(new_wallpaper)
