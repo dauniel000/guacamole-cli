@@ -2,6 +2,8 @@
 
 Guacamole CLI is a cross-platform tool that turns your to-do list into a beautiful desktop wallpaper. It supports KDE Plasma, GNOME, and Windows environments, and is written in Python.
 
+> **Disclaimer:** Guacamole CLI has only been thoroughly tested on KDE Plasma. Support for GNOME and Windows is experimental.
+
 ## Features
 - Manage your to-do list from the command line
 - Automatically updates your desktop wallpaper with your tasks
