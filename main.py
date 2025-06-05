@@ -30,6 +30,8 @@ def main():
         print("\nAll tasks:")
         for i, todo in enumerate(todos, 1):
             print(f"{i}. {todo}")
+        if not todos:
+            set_wallpaper(settings.USER_WALLPAPER)
     elif cmd == 'add':
         todos = load_todos()
         if len(args) > 1:
@@ -53,13 +55,16 @@ def main():
             save_todos(todos)
             print(f"Removed: {removed}")
             render_wallpaper(todos)
-            set_wallpaper(settings.WALLPAPER_FILE)
+            if not todos:
+                set_wallpaper(settings.USER_WALLPAPER)
+            else:
+                set_wallpaper(settings.WALLPAPER_FILE)
         else:
             print("Invalid task number.")
     elif cmd == 'flush':
         save_todos([])
         render_wallpaper([])
-        set_wallpaper(settings.WALLPAPER_FILE)
+        set_wallpaper(settings.USER_WALLPAPER)
         print("All tasks cleared!")
     else:
         print_help()
